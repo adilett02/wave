@@ -372,4 +372,14 @@
   </section>
   {% include "blocks/footer.njk" %}
 {% endblock %}
-{% block scripts %}{% endblock %}
+{% block scripts %}
+  <script>
+
+    $('form').on('submit', function (e) {
+      e.preventDefault();
+      if (!$('form')[0].checkValidity()) 
+        return;
+      window.location = 'bookingEnd.html';
+    })
+  </script>
+{% endblock %}
