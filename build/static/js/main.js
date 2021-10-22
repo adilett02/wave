@@ -64,46 +64,83 @@ $('input[name="daterange"]').daterangepicker(
   }
 );
 
-$('input[name="single-date"]').daterangepicker(
-  {
-    singleDatePicker: true,
-    autoUpdateInput: false,
-    "locale": {
-      "format": "DD.MM.YYYY",
-      "applyLabel": "Готово",
-      "cancelLabel": "Отмена",
-      "daysOfWeek": [
-        "Вс",
-        "Пн",
-        "Вт",
-        "Ср",
-        "Чт",
-        "Пт",
-        "Сб",
+// $('input[name="single-date"]').daterangepicker(
+//   {
+//     singleDatePicker: true,
+//     autoUpdateInput: false,
+//     "locale": {
+//       "format": "DD.MM.YYYY",
+//       "applyLabel": "Готово",
+//       "cancelLabel": "Отмена",
+//       "daysOfWeek": [
+//         "Вс",
+//         "Пн",
+//         "Вт",
+//         "Ср",
+//         "Чт",
+//         "Пт",
+//         "Сб",
 
-      ],
-      "monthNames": [
-        "Январь",
-        "Февраль",
-        "Март",
-        "Апрель",
-        "Май",
-        "Июнь",
-        "Июль",
-        "Август",
-        "Сентябрь",
-        "Октябрь",
-        "Ноябрь",
-        "Декабрь"
-      ],
-      "firstDay": 1
-    }
-  }
-);
+//       ],
+//       "monthNames": [
+//         "Январь",
+//         "Февраль",
+//         "Март",
+//         "Апрель",
+//         "Май",
+//         "Июнь",
+//         "Июль",
+//         "Август",
+//         "Сентябрь",
+//         "Октябрь",
+//         "Ноябрь",
+//         "Декабрь"
+//       ],
+//       "firstDay": 1
+//     }
+//   }
+// );
 $('input[name="single-date"]').on('apply.daterangepicker', function (ev, picker) {
   $(this).val(picker.startDate.format('DD.MM.YYYY'));
 });
+$('input[name="single-date"]').on('focus', function () {
+  $(this).daterangepicker(
+    {
+      singleDatePicker: true,
+      // autoUpdateInput: true,
+      "locale": {
+        "format": "DD.MM.YYYY",
+        "applyLabel": "Готово",
+        "cancelLabel": "Отмена",
+        "daysOfWeek": [
+          "Вс",
+          "Пн",
+          "Вт",
+          "Ср",
+          "Чт",
+          "Пт",
+          "Сб",
 
+        ],
+        "monthNames": [
+          "Январь",
+          "Февраль",
+          "Март",
+          "Апрель",
+          "Май",
+          "Июнь",
+          "Июль",
+          "Август",
+          "Сентябрь",
+          "Октябрь",
+          "Ноябрь",
+          "Декабрь"
+        ],
+        "firstDay": 1
+      }
+    }
+  );
+});
 $('.menu-bar').on('click', function (e) {
   e.preventDefault();
   $('.overlay').toggleClass('active');
