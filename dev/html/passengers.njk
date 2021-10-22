@@ -375,7 +375,7 @@
                 </div>
               </div>
             </div>
-            <button class="primary-btn mt-5" type="submit">Следующий шаг</button>
+            <button id="btn_click" class="primary-btn mt-5" type="submit">Следующий шаг</button>
             <!-- <a class="primary-btn mt-5" href="passengers2.html">Следующий шаг</a> -->
           </form>
 
@@ -399,4 +399,14 @@
   </section>
   {% include "blocks/footer.njk" %}
 {% endblock %}
-{% block scripts %}{% endblock %}
+{% block scripts %}
+  <script>
+
+    $('form').on('submit', function (e) {
+      e.preventDefault();
+      if (!$('form')[0].checkValidity()) 
+        return;
+      window.location = 'passengers2.html';
+    })
+  </script>
+{% endblock %}

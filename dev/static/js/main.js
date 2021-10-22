@@ -210,3 +210,8 @@ if (window.innerWidth <= 767) {
 
   $('.testimonials__swiper-wrapper').empty().append(slides)
 }
+
+$('form').on('submit', function (e) {
+  e.preventDefault();
+  console.log('awdasdasd');
+})
