@@ -1,0 +1,95 @@
+.autorize {
+    min-height: 100vh;
+    background-image: url(../images/autorize.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header {
+    .primary-btn {
+        color: $primary-color;
+        background-color: $secondary-color;
+    }
+    p {
+        color: $primary-color;
+    }
+}
+.opacity-block {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 40px;
+    padding: 45px 40px 30px;
+}
+.autorize-title {
+    text-align: center;
+    color: $secondary-color;
+    font-size: 32px;
+}
+.autorize-form {
+    position: relative;
+    text-align: center;
+    .primary-btn {
+        color: $primary-color;
+        background-color: $tertiary-color;
+        box-shadow: none;
+        padding: 7px 50px;
+    }
+    form {
+        margin-top: 35px;
+        margin-bottom: 16px;
+    }
+    .form-group {
+        margin-bottom: 25px;
+        input {
+            width: 100%;
+            background-color: $primary-color;
+            padding: 18px 16px;
+            border-radius: 10px;
+        }
+    }
+}
+
+.restore-password {
+    display: block;
+    text-decoration: underline;
+    color: $secondary-color;
+}
+
+// booking-end
+.booking-end {
+    padding: 150px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    .leaves1 {
+        position: absolute;
+        top: -30px;
+        left: 0;
+    }
+    .leaves2 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    .piece {
+        position: absolute;
+        right: 0;
+        top: -20%;
+        transform: rotate(180deg);
+        z-index: -1;
+    }
+    .opacity-block {
+        border: 1px solid $tertiary-color;
+    }
+    .form-group input {
+        border: 1px solid $tertiary-color;
+    }
+}
+.booking-end__text {
+    font-size: 24px;
+    color: $secondary-color;
+}

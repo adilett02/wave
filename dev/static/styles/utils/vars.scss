@@ -1,0 +1,16 @@
+$primary-color: #fff;
+$secondary-color: #0a3468;
+$tertiary-color: #66b2fe;
+$primary-font: "Fira Sans", sans-serif;
+$secondary-font: "Fira Sans Condensed", sans-serif;
+.primary-btn {
+    padding: 7px 30px;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0px 4px 4px rgba(83, 115, 151, 0.39);
+    border-radius: 10px;
+    transition: 0.3s;
+    &:hover {
+        background-color: $secondary-color !important;
+    }
+}

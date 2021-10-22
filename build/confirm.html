@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <title>Confirm</title>
+    <!--[if IE]>
+      <meta http-equiv="X-UA-Compatible" content="IE = edge" />
+    <![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/css/main.css" type="text/css" />
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="main-page">
+    
+  
+  <div class="overlay"></div>
+  <div class="mobile-menu">
+    <button type="button" class="btn-close main-menu__close" aria-label="Close"></button>
+    <div class="mobile-menu__list">
+      <a class="phone" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path
+          d="M5.07063 0.819824C3.79352 0.819824 1.9359 2.18581 1.47149 3.09647C0.807391 4.39871 0.916991 4.90868 1.35539 6.28378C1.9359 8.10509 3.63748 11.3334 5.99944 13.569C9.36638 16.7564 12.5011 18.1223 13.8943 18.5777C15.2876 19.033 16.7969 18.5777 17.7257 17.667C18.6545 16.7564 19.5833 15.8457 18.5384 14.4797C17.7981 13.5117 16.7189 12.3925 15.4037 11.7477C14.2073 11.1613 13.494 11.3744 13.0816 12.2031C12.8531 12.6611 12.7825 13.5381 12.6172 14.0244C12.4082 14.6382 11.5723 14.4797 10.6435 14.0244C9.75463 13.5882 7.50876 11.7477 5.65114 9.01575C4.49941 7.32284 6.34032 7.31282 7.50876 6.73911C8.43757 6.28378 8.7255 5.23652 7.97317 4.00713C6.57995 1.73048 6.11555 0.819824 5.07063 0.819824Z"
+          fill="white" stroke="white"/>
+        </svg>
+        <span class="ms-2"> 8 (800) 999-45-54 </span>
+      </a>
+      <a class="search" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+          <rect width="36" height="36" rx="18" fill="white"/>
+          <path
+          d="M25 24.7636L21.6945 21.4639L25 24.7636ZM23.5263 17.054C23.5263 18.7093 22.8664 20.2967 21.6919 21.4671C20.5173 22.6375 18.9243 23.2951 17.2632 23.2951C15.6021 23.2951 14.009 22.6375 12.8344 21.4671C11.6599 20.2967 11 18.7093 11 17.054C11 15.3988 11.6599 13.8114 12.8344 12.6409C14.009 11.4705 15.6021 10.813 17.2632 10.813C18.9243 10.813 20.5173 11.4705 21.6919 12.6409C22.8664 13.8114 23.5263 15.3988 23.5263 17.054V17.054Z"
+          stroke="#017BEA" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </a>
+      <a class="account" href="signIn.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+          <rect width="36" height="36" rx="18" fill="white"/>
+          <path
+          d="M18 17.1818C16.8212 17.1818 15.6908 16.7508 14.8573 15.9836C14.0238 15.2164 13.5555 14.1759 13.5555 13.0909C13.5555 12.0059 14.0238 10.9654 14.8573 10.1982C15.6908 9.43101 16.8212 9 18 9C19.1787 9 20.3092 9.43101 21.1427 10.1982C21.9762 10.9654 22.4444 12.0059 22.4444 13.0909C22.4444 14.1759 21.9762 15.2164 21.1427 15.9836C20.3092 16.7508 19.1787 17.1818 18 17.1818Z"
+          stroke="#017BEA" stroke-width="2" stroke-linecap="round"/>
+          <path
+          d="M10 27V26.065C10 24.577 10.6321 23.15 11.7574 22.0978C12.8826 21.0457 14.4087 20.4546 16 20.4546H20C21.5913 20.4546 23.1174 21.0457 24.2426 22.0978C25.3679 23.15 26 24.577 26 26.065V27"
+          stroke="#017BEA" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <header class="cruse-list__header">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <a class="logo" href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="110" height="24" viewBox="0 0 110 24" fill="none">
+          <path
+          d="M13.3663 0.842959C13.2808 0.842959 13.2012 0.886711 13.1553 0.958933C13.1094 1.03116 13.1037 1.12182 13.14 1.19925L17.6885 10.8818L13.9762 18.394L5.8263 0.894454C5.78526 0.80634 5.69687 0.75 5.59967 0.75H1C0.913463 0.75 0.83308 0.794753 0.787496 0.86831C0.741912 0.941868 0.73761 1.03377 0.776124 1.11126L11.7098 23.1113C11.752 23.1963 11.8387 23.25 11.9336 23.25H15.6285C15.7222 23.25 15.8081 23.1975 15.8509 23.1141L20.6797 13.6961L25.4721 23.1134C25.5148 23.1972 25.6009 23.25 25.6949 23.25H29.3521C29.4468 23.25 29.5335 23.1964 29.5758 23.1116L40.5471 1.11157C40.5858 1.03407 40.5816 0.942097 40.536 0.868456C40.4904 0.794815 40.41 0.75 40.3234 0.75H35.686C35.5887 0.75 35.5002 0.806519 35.4592 0.894845L27.3467 18.393L23.6349 10.8818L28.1834 1.19925C28.2197 1.12182 28.214 1.03116 28.1681 0.958933C28.1222 0.886711 28.0426 0.842959 27.9571 0.842959H23.9983C23.8999 0.842959 23.8106 0.900713 23.7703 0.990493L20.6441 7.94774L17.5535 0.991454C17.5134 0.901156 17.4239 0.842959 17.3251 0.842959H13.3663ZM48.6166 0.75C48.5202 0.75 48.4324 0.805437 48.3909 0.892475L37.9097 22.8925C37.8728 22.9699 37.8782 23.0609 37.924 23.1335C37.9698 23.206 38.0496 23.25 38.1354 23.25H42.6219C42.7191 23.25 42.8074 23.1937 42.8485 23.1057L45.5711 17.2697H55.584L58.3439 23.1069C58.3853 23.1943 58.4733 23.25 58.57 23.25H63.0188C63.1045 23.25 63.1842 23.2061 63.23 23.1337C63.2759 23.0614 63.2814 22.9706 63.2448 22.8931L52.839 0.893106C52.7977 0.805725 52.7097 0.75 52.613 0.75H48.6166ZM66.5462 0.896572C66.5056 0.807311 66.4166 0.75 66.3186 0.75H61.832C61.7461 0.75 61.6662 0.794123 61.6204 0.866843C61.5746 0.939563 61.5694 1.03069 61.6066 1.10815L72.1632 23.1082C72.2048 23.1948 72.2924 23.25 72.3886 23.25H76.385C76.4813 23.25 76.569 23.1947 76.6106 23.1078L81.87 12.1078L87.1295 1.10784C87.1665 1.03038 87.1612 0.939332 87.1154 0.866696C87.0697 0.79406 86.9898 0.75 86.9039 0.75H82.4174C82.3192 0.75 82.2301 0.807496 82.1896 0.896973L74.3863 18.1495L66.5462 0.896572ZM109.25 19.9324C109.25 19.7943 109.138 19.6824 109 19.6824H95.1117V13.4585H106.813C106.951 13.4585 107.063 13.3465 107.063 13.2085V10.3268C107.063 10.1887 106.951 10.0768 106.813 10.0768H95.1117V4.31761H108.661C108.799 4.31761 108.911 4.20568 108.911 4.06761V1C108.911 0.861929 108.799 0.75 108.661 0.75H90.639C90.5009 0.75 90.389 0.861929 90.389 1V1.0503V1.10051V1.15064V1.20068V1.25063V1.3005V1.35029V1.39999V1.44961V1.49915V1.5486V1.59797V1.64726V1.69646V1.74559V1.79463V1.84359V1.89247V1.94127V1.98999V2.03863V2.08719V2.13568V2.18408V2.23241V2.28065V2.32882V2.37692V2.42493V2.47287V2.52074V2.56852V2.61623V2.66387V2.71143V2.75892V2.80633V2.85367V2.90093V2.94813V2.99524V3.04229V3.08926V3.13617V3.183V3.22976V3.27645V3.32306V3.36961V3.41609V3.4625V3.50884V3.55511V3.60131V3.64744V3.69351V3.73951V3.78544V3.8313V3.8771V3.92283V3.9685V4.0141V4.05964V4.10511V4.15051V4.19585V4.24113V4.28635V4.3315V4.37659V4.42161V4.46658V4.51148V4.55632V4.6011V4.64582V4.69048V4.73508V4.77962V4.8241V4.86852V4.91288V4.95719V5.00143V5.04562V5.08975V5.13382V5.17784V5.2218V5.2657V5.30955V5.35335V5.39709V5.44077V5.4844V5.52797V5.5715V5.61496V5.65838V5.70174V5.74505V5.78831V5.83152V5.87467V5.91778V5.96083V6.00384V6.04679V6.08969V6.13255V6.17535V6.21811V6.26082V6.30348V6.3461V6.38866V6.43118V6.47365V6.51608V6.55846V6.6008V6.64309V6.68533V6.72753V6.76969V6.8118V6.85387V6.8959V6.93788V6.97982V7.02172V7.06357V7.10539V7.14716V7.18889V7.23059V7.27224V7.31385V7.35542V7.39696V7.43845V7.47991V7.52133V7.56271V7.60405V7.64535V7.68662V7.72786V7.76905V7.81021V7.85134V7.89243V7.93348V7.97451V8.01549V8.05645V8.09737V8.13825V8.17911V8.21993V8.26072V8.30148V8.3422V8.3829V8.42356V8.4642V8.5048V8.54537V8.58592V8.62644V8.66692V8.70738V8.74781V8.78822V8.82859V8.86894V8.90926V8.94956V8.98983V9.03008V9.07029V9.11049V9.15066V9.1908V9.23092V9.27102V9.3111V9.35115V9.39118V9.43118V9.47117V9.51113V9.55107V9.59099V9.63089V9.67077V9.71063V9.75047V9.7903V9.8301V9.86988V9.90965V9.9494V9.98913V10.0288V10.0685V10.1082V10.1479V10.1875V10.2272V10.2668V10.3064V10.346V10.3855V10.4251V10.4646V10.5042V10.5437V10.5832V10.6227V10.6622V10.7017V10.7411V10.7806V10.82V10.8594V10.8989V10.9383V10.9777V11.0171V11.0564V11.0958V11.1352V11.1745V11.2139V11.2532V11.2926V11.3319V11.3712V11.4106V11.4499V11.4892V11.5285V11.5678V11.6071V11.6464V11.6857V11.725V11.7643V11.8036V11.8429V11.8822V11.9214V11.9607V12V12.0393V12.0786V12.1178V12.1571V12.1964V12.2357V12.275V12.3143V12.3536V12.3929V12.4322V12.4715V12.5108V12.5501V12.5894V12.6288V12.6681V12.7074V12.7468V12.7861V12.8255V12.8648V12.9042V12.9436V12.9829V13.0223V13.0617V13.1011V13.1406V13.18V13.2194V13.2589V13.2983V13.3378V13.3773V13.4168V13.4563V13.4958V13.5354V13.5749V13.6145V13.654V13.6936V13.7332V13.7728V13.8125V13.8521V13.8918V13.9315V13.9712V14.0109V14.0506V14.0904V14.1301V14.1699V14.2097V14.2495V14.2894V14.3292V14.3691V14.409V14.4489V14.4889V14.5288V14.5688V14.6088V14.6489V14.6889V14.729V14.7691V14.8092V14.8493V14.8895V14.9297V14.9699V15.0102V15.0504V15.0907V15.1311V15.1714V15.2118V15.2522V15.2926V15.3331V15.3736V15.4141V15.4546V15.4952V15.5358V15.5764V15.6171V15.6578V15.6985V15.7393V15.7801V15.8209V15.8617V15.9026V15.9436V15.9845V16.0255V16.0665V16.1076V16.1487V16.1898V16.2309V16.2721V16.3134V16.3546V16.396V16.4373V16.4787V16.5201V16.5615V16.603V16.6446V16.6861V16.7278V16.7694V16.8111V16.8528V16.8946V16.9364V16.9783V17.0202V17.0621V17.1041V17.1461V17.1882V17.2303V17.2725V17.3147V17.3569V17.3992V17.4415V17.4839V17.5263V17.5688V17.6113V17.6539V17.6965V17.7392V17.7819V17.8246V17.8675V17.9103V17.9532V17.9962V18.0392V18.0822V18.1253V18.1685V18.2117V18.2549V18.2983V18.3416V18.385V18.4285V18.472V18.5156V18.5592V18.6029V18.6467V18.6904V18.7343V18.7782V18.8222V18.8662V18.9102V18.9544V18.9986V19.0428V19.0871V19.1315V19.1759V19.2204V19.2649V19.3095V19.3542V19.3989V19.4437V19.4885V19.5334V19.5784V19.6234V19.6685V19.7137V19.7589V19.8041V19.8495V19.8949V19.9404V19.9859V20.0315V20.0772V20.1229V20.1687V20.2146V20.2605V20.3065V20.3526V20.3987V20.4449V20.4912V20.5375V20.5839V20.6304V20.6769V20.7236V20.7702V20.817V20.8638V20.9107V20.9577V21.0048V21.0519V21.0991V21.1463V21.1937V21.2411V21.2886V21.3361V21.3838V21.4315V21.4793V21.5271V21.5751V21.6231V21.6712V21.7193V21.7676V21.8159V21.8643V21.9128V21.9614V22.01V22.0587V22.1075V22.1564V22.2054V22.2544V22.3035V22.3527V22.402V22.4514V22.5009V22.5504V22.6V22.6497V22.6995V22.7494V22.7993V22.8494V22.8995V22.9497V23C90.389 23.1381 90.5009 23.25 90.639 23.25H109C109.138 23.25 109.25 23.1381 109.25 23V19.9324ZM46.5567 14.1979L50.6109 5.41622L54.5276 14.1979H46.5567Z"
+          fill="#66B2FE" stroke="#66B2FE" stroke-width="0.5" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <div class="header-search">
+    <input type="text" placeholder="Начать поиск">
+    <button>
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <rect width="36" height="36" rx="18" fill="#66b2fe"/>
+            <path
+            d="M25 24.7636L21.6945 21.4639L25 24.7636ZM23.5263 17.054C23.5263 18.7093 22.8664 20.2967 21.6919 21.4671C20.5173 22.6375 18.9243 23.2951 17.2632 23.2951C15.6021 23.2951 14.009 22.6375 12.8344 21.4671C11.6599 20.2967 11 18.7093 11 17.054C11 15.3988 11.6599 13.8114 12.8344 12.6409C14.009 11.4705 15.6021 10.813 17.2632 10.813C18.9243 10.813 20.5173 11.4705 21.6919 12.6409C22.8664 13.8114 23.5263 15.3988 23.5263 17.054V17.054Z"
+            stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+    </button>
+</div>
+      <div class="menu">
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <rect width="36" height="36" rx="18" fill="#66B2FE"/>
+            <path
+            d="M13.0174 9C11.757 9 9.92366 10.375 9.46533 11.2917C8.80991 12.6025 8.91808 13.1158 9.35074 14.5C9.92366 16.3333 11.603 19.5829 13.9341 21.8333C17.257 25.0417 20.3507 26.4167 21.7257 26.875C23.1007 27.3333 24.5903 26.875 25.507 25.9583C26.4237 25.0417 27.3403 24.125 26.3091 22.75C25.5785 21.7756 24.5133 20.649 23.2153 20C22.0347 19.4097 21.3307 19.6242 20.9237 20.4583C20.6982 20.9194 20.6285 21.8022 20.4653 22.2917C20.2591 22.9095 19.4341 22.75 18.5174 22.2917C17.6402 21.8526 15.4237 20 13.5903 17.25C12.4537 15.5459 14.2705 15.5358 15.4237 14.9583C16.3403 14.5 16.6245 13.4458 15.882 12.2083C14.507 9.91667 14.0487 9 13.0174 9Z"
+            stroke="white" stroke-width="1.5"/>
+          </svg>
+        </a>
+        <a class="account ms-2" href="signIn.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <rect x="0.5" y="0.5" width="35" height="35" rx="17.5" stroke="#0A3468"/>
+            <path
+            d="M18.0001 17.1818C16.8214 17.1818 15.6909 16.7508 14.8574 15.9836C14.0239 15.2164 13.5557 14.1759 13.5557 13.0909C13.5557 12.0059 14.0239 10.9654 14.8574 10.1982C15.6909 9.43101 16.8214 9 18.0001 9C19.1788 9 20.3093 9.43101 21.1428 10.1982C21.9763 10.9654 22.4446 12.0059 22.4446 13.0909C22.4446 14.1759 21.9763 15.2164 21.1428 15.9836C20.3093 16.7508 19.1788 17.1818 18.0001 17.1818Z"
+            stroke="#0A3468" stroke-width="1.5" stroke-linecap="round"/>
+            <path
+            d="M10 27V26.065C10 24.577 10.6321 23.15 11.7574 22.0978C12.8826 21.0457 14.4087 20.4546 16 20.4546H20C21.5913 20.4546 23.1174 21.0457 24.2426 22.0978C25.3679 23.15 26 24.577 26 26.065V27"
+            stroke="#0A3468" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </a>
+      </div>
+      <div class="menu-bar d-block d-lg-none">
+        <span></span>
+      </div>
+    </div>
+  </header>
+  <section class="booking">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="booking-title">
+            <a href="passengers2.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
+                <path opacity="0.6" d="M10 2.28571L3.75 8L10 13.7143L8.75 16L0 8L8.75 0L10 2.28571Z" fill="#082344"/>
+              </svg>
+            </a>
+            <h2>Оформление бронирования</h2>
+          </div>
+
+          <nav class="navbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="cabin.html">Выбор каюты</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="passengers.html">Пассажиры</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="confirm.html">Подтверждение</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bookingEnd.html">Вход в личный кабинет</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="confirm-cruise row">
+          <div class="col-lg-6 about-cruise__confirm">
+            <span class="type-cruise">Круиз</span>
+            <h5>Лирика Полесья</h5>
+            <p>24 апр 2021 (сб) — 01 май 2021 (сб)</p>
+            <p>
+              <span class="me-3">дней: 4</span>
+              <span>ночей: 5</span>
+            </p>
+            <h6>Гостей: 2</h6>
+          </div>
+          <div class="cruise-image col-lg-5">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="cruise-images">
+                    <img src="static/images/cruise.jpg" alt=""/>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="cruise-images">
+                    <img src="static/images/cruise.jpg" alt=""/>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="cruise-images">
+                    <img src="static/images/cruise.jpg" alt=""/>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+                <span aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none"
+                  style="transform: rotate(180deg)">
+                    <path opacity="0.6" d="M10 2.28571L3.75 8L10 13.7143L8.75 16L0 8L8.75 0L10 2.28571Z" fill="#082344"
+                    style="opacity: 1; fill: #000"></path>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form class="needs-validation" novalidate>
+        <div class="row mb-3">
+          <div class="col-lg-6">
+            <div class="passengers-block">
+              <h4 class="passenger-title">Пассажир 1</h4>
+              <div class="row mb-3">
+                <div class="col-5">
+                  <input class="input" type="text" value="Взрослое место" disabled/>
+                </div>
+                <div class="col-7">
+                  <input class="input" type="text" value="Фамилия" disabled/>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-5">
+                  <input class="input" type="text" value="Имя" disabled/>
+                </div>
+                <div class="col-7">
+                  <input class="input" type="text" value="Отчество" disabled/>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-5">
+                  <input class="input" type="text" value="Паспорт РФ" disabled/>
+                </div>
+                <div class="col-7">
+                  <div class="row">
+                    <div class="col-6">
+                      <input class="input" type="text" value="Серия и номер" disabled/>
+                    </div>
+                    <div class="col-6">
+                      <input class="input" type="text" value="Дата выдачи" disabled/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-5">
+                  <input class="input" type="text" value="Дата рождения" disabled/>
+                </div>
+                <div class="col-7">
+                  <input class="input" type="text" value="Кем выдан" disabled/>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-5">
+                  <input class="input" type="text" value="Мужской" disabled/>
+                </div>
+                <div class="col-7">
+                  <input class="input" type="text" value="Адрес прописки" disabled/>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-5">
+                  <input class="input" type="text" value="Гражданство" disabled/>
+                </div>
+                <div class="col-7">
+                  <input class="input" type="text" value="Дата окончания" disabled/>
+                </div>
+              </div>
+              <h4 class="discount-title">Скидка</h4>
+              <div class="ckeckboxes d-flex">
+                <div class="form-check" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="при наведении появляется всплывающее описание">
+                  <input checked disabled class="form-check-input" type="checkbox" value="" id="flexCheckDefault1"/>
+                  <label class="form-check-label" for="flexCheckDefault1"> Пенсионер </label>
+                </div>
+                <div class="form-check" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="при наведении появляется всплывающее описание">
+                  <input checked disabled class="form-check-input" type="checkbox" value="" id="flexCheckDefault2"/>
+                  <label class="form-check-label" for="flexCheckDefault2"> Пенсионер </label>
+                </div>
+                <div class="form-check" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="при наведении появляется всплывающее описание">
+                  <input checked disabled class="form-check-input" type="checkbox" value="" id="flexCheckDefault3"/>
+                  <label class="form-check-label" for="flexCheckDefault3"> Пенсионер </label>
+                </div>
+              </div>
+            </div>
+            <div class="passengers-block">
+              <h4 class="passenger-title">Пассажир 2</h4>
+              <div class="row mb-3">
+                <div class="col-5">
+                  <input class="input" type="text" value="Взрослое место" disabled/>
+                </div>
+                <div class="col-7">
+                  <input class="input" type="text" value="Фамилия" disabled/>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-5">
+                  <input class="input" type="text" value="Имя" disabled/>
+                </div>
+                <div class="col-7">
+                  <input class="input" type="text" value="Отчество" disabled/>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-5">
+                  <input class="input" type="text" value="Паспорт РФ" disabled/>
+                </div>
+                <div class="col-7">
+                  <div class="row">
+                    <div class="col-6">
+                      <input class="input" type="text" value="Серия и номер" disabled/>
+                    </div>
+                    <div class="col-6">
+                      <input class="input" type="text" value="Дата выдачи" disabled/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-5">
+                  <input class="input" type="text" value="Дата рождения" disabled/>
+                </div>
+                <div class="col-7">
+                  <input class="input" type="text" value="Кем выдан" disabled/>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-5">
+                  <input class="input" type="text" value="Мужской" disabled/>
+                </div>
+                <div class="col-7">
+                  <input class="input" type="text" value="Адрес прописки" disabled/>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-5">
+                  <input class="input" type="text" value="Гражданство" disabled/>
+                </div>
+                <div class="col-7">
+                  <input class="input" type="text" value="Дата окончания" disabled/>
+                </div>
+              </div>
+              <h4 class="discount-title">Скидка</h4>
+              <div class="ckeckboxes d-flex">
+
+                <div class="form-check" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="при наведении появляется всплывающее описание">
+                  <input checked disabled class="form-check-input" type="checkbox" value="" id="flexCheckDefault1"/>
+                  <label class="form-check-label" for="flexCheckDefault1"> Пенсионер </label>
+                </div>
+                <div class="form-check" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="при наведении появляется всплывающее описание">
+                  <input checked disabled class="form-check-input" type="checkbox" value="" id="flexCheckDefault2"/>
+                  <label class="form-check-label" for="flexCheckDefault2"> Пенсионер </label>
+                </div>
+                <div class="form-check" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="при наведении появляется всплывающее описание">
+                  <input checked disabled class="form-check-input" type="checkbox" value="" id="flexCheckDefault3"/>
+                  <label class="form-check-label" for="flexCheckDefault3"> Пенсионер </label>
+                </div>
+              </div>
+            </div>
+            <div class="passengers-block">
+              <h4 class="passenger-title">Контактное лицо</h4>
+              <div class="row mb-3">
+                <div class="col-5 form-group">
+                  <input class="input form-control" type="text" placeholder="Имя" required/>
+                  <div class="invalid-feedback">заполните данное поле</div>
+                </div>
+                <div class="col-7 form-group">
+                  <input class="input form-control" type="email" placeholder="E-mail" required/>
+                  <div class="invalid-feedback">заполните данное поле</div>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-5 form-group">
+                  <input class="input form-control" type="number" placeholder="Телефон" required/>
+                  <div class="invalid-feedback">заполните данное поле</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3 mt-5">
+          <div class="col-12">
+            <div class="form-check my-2">
+              <input class="form-check-input" type="checkbox" value="" id="flexcheckdefault5" required/>
+              <label class="form-check-label btn p-0" for="flexcheckdefault5"> Я подтверждаю, что лица выше, в том числе и
+              я,
+              согласны на обработку персональных данных </label>
+            </div>
+            <div class="form-check my-2">
+              <input class="form-check-input " type="checkbox" value="" id="flexcheckdefault6" required/>
+              <label class="form-check-label btn p-0" for="flexcheckdefault6"> Я прочитал и согласен с условиями политики
+              конфиденциальности </label>
+            </div>
+          </div>
+        </div>
+        <div class="total row">
+          <div class="col-lg-9 d-flex  justify-content-between">
+            <h4>Итого:</h4>
+            <div class="price">
+              <span>24 000 Р</span>
+              <p>Итоговую сумму со скидками вам сообщит менеджер при подтверждении.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 text-end">
+            <button class="primary-btn" type="submit">Забронировать</button>
+            <!-- <a class="primary-btn" href="bookingEnd.html">Забронировать</a> -->
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </section>
+  <footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <h1 class="title">Лучшие круизы России и Белоруссии</h1>
+        <p>
+          Повышенный кэшбек при раннем бронировании всех круизов, Повышенный кэшбек при раннем
+          бронировании всех круизов, Повышенный кэшбек при раннем бронировании всех круизов,
+        </p>
+        <form class="footer-form">
+          <input type="text" />
+          <button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="31"
+              viewBox="0 0 28 31"
+              fill="none"
+            >
+              <path
+                d="M0 10.7177C0.606624 10.7177 27.3408 0 27.3408 0L18.7968 30.221L12.2009 16.9284L0 10.7177Z"
+                fill="white"
+              />
+              <path d="M27.3408 0L11.8477 16.9284L18.6717 30.221L27.3408 0Z" fill="#A2CBF7" />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid footer-bottom">
+    <div class="row">
+      <div class="col-lg-3 col-sm-4 col-6 py-4">
+        <ul>
+          <li>
+            <a href="#">© Wave круизы</a>
+          </li>
+          <li>
+            <a href="#">ИП</a>
+          </li>
+          <li>
+            <a href="#">ИНН</a>
+          </li>
+          <li>
+            <a href="#">ОНРГИП</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-4 col-6 py-4">
+        <ul>
+          <li>
+            <a href="#">Как сделать заказ</a>
+          </li>
+          <li>
+            <a href="#">Помощь</a>
+          </li>
+          <li>
+            <a href="#">О нас</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-4 col-6 py-4">
+        <ul>
+          <li>
+            <a href="#">Речные круизы</a>
+          </li>
+          <li>
+            <a href="#">Россия и Белоруссия</a>
+          </li>
+          <li>
+            <a href="#">Европа</a>
+          </li>
+          <li>
+            <a href="#">Морские круизы</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-6 d-flex mb-5">
+        <ul>
+          <li>
+            <a href="#">Политика конфиденциальности</a>
+          </li>
+          <li>
+            <a href="#">Пользовательское соглашение</a>
+          </li>
+          <li>
+            <a href="#">Возврат билетов</a>
+          </li>
+          <li>
+            <a href="#">Способы получения билетов</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-6 d-flex align-items-end justify-content-md-end justify-content-center">
+        <div class="social__list">
+          <div class="social__item">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  d="M5.07063 0.819824C3.79352 0.819824 1.9359 2.18581 1.47149 3.09647C0.807391 4.39871 0.916991 4.90868 1.35539 6.28378C1.9359 8.10509 3.63748 11.3334 5.99944 13.569C9.36638 16.7564 12.5011 18.1223 13.8943 18.5777C15.2876 19.033 16.7969 18.5777 17.7257 17.667C18.6545 16.7564 19.5833 15.8457 18.5384 14.4797C17.7981 13.5117 16.7189 12.3925 15.4037 11.7477C14.2073 11.1613 13.494 11.3744 13.0816 12.2031C12.8531 12.6611 12.7825 13.5381 12.6172 14.0244C12.4082 14.6382 11.5723 14.4797 10.6435 14.0244C9.75463 13.5882 7.50876 11.7477 5.65114 9.01575C4.49941 7.32284 6.34032 7.31282 7.50876 6.73911C8.43757 6.28378 8.7255 5.23652 7.97317 4.00713C6.57995 1.73048 6.11555 0.819824 5.07063 0.819824Z"
+                  fill="white"
+                  stroke="white"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="social__item">
+            <a class="instagram-link" href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                height="24"
+                stroke="#000"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+              >
+                <rect height="20" rx="5" ry="5" width="20" x="2" y="2" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" x2="17.5" y1="6.5" y2="6.5" />
+              </svg>
+            </a>
+          </div>
+          <div class="social__item">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="26"
+                viewBox="0 0 12 26"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M2.86565 13.096V24.7855C2.86565 24.8253 2.87348 24.8646 2.88864 24.9013C2.9038 24.9381 2.92601 24.9717 2.95402 24.9998C2.98203 25.028 3.01523 25.0503 3.05183 25.0655C3.08843 25.0807 3.12771 25.0886 3.16733 25.0886H7.50824C7.58824 25.0886 7.66488 25.0566 7.72146 24.9998C7.77803 24.943 7.80983 24.8659 7.80983 24.7855V12.9037H10.9588C11.034 12.904 11.1066 12.8763 11.1624 12.8257C11.2182 12.7752 11.2532 12.7057 11.2605 12.6306L11.5621 9.04674C11.5652 9.00513 11.5596 8.96342 11.5459 8.92407C11.5321 8.88471 11.5103 8.84852 11.482 8.81799C11.4537 8.78747 11.4193 8.76315 11.3812 8.74655C11.3431 8.72996 11.3021 8.72155 11.2605 8.72166H7.80983V6.17983C7.81177 5.89303 7.92659 5.61849 8.1292 5.41638C8.33182 5.21427 8.60578 5.10067 8.89135 5.10068H11.312C11.3522 5.10166 11.3923 5.09453 11.4297 5.07975C11.4672 5.06497 11.5013 5.04304 11.5301 5.01481C11.5588 4.98658 11.5818 4.95283 11.5974 4.91559C11.613 4.87834 11.621 4.83838 11.621 4.79797V1.22137C11.621 1.13906 11.5885 1.0602 11.5305 1.002C11.4725 0.943798 11.3939 0.911078 11.312 0.911078H7.21392C6.64325 0.910107 6.07793 1.02219 5.55041 1.24085C5.0229 1.4595 4.54351 1.7805 4.13964 2.18542C3.73577 2.59034 3.4154 3.07142 3.19678 3.60084C2.97817 4.13025 2.86564 4.69748 2.86565 5.27061V8.72166H0.658411C0.618182 8.72067 0.578208 8.7278 0.540756 8.74258C0.503304 8.75737 0.469141 8.7793 0.440345 8.80753C0.41155 8.83576 0.388693 8.8695 0.373076 8.90675C0.357458 8.94399 0.349353 8.98395 0.349365 9.02437V12.601C0.349353 12.6414 0.357458 12.6813 0.373076 12.7186C0.388693 12.7558 0.41155 12.7896 0.440345 12.8178C0.469141 12.846 0.503304 12.868 0.540756 12.8828C0.578208 12.8975 0.618182 12.9047 0.658411 12.9037H2.86565V13.096Z"
+                  fill="#0A3468"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="social__item">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="20"
+                viewBox="0 0 24 20"
+                fill="none"
+              >
+                <path
+                  d="M23.8239 2.64015C23.0647 2.97018 22.2658 3.19904 21.4474 3.32025C21.83 3.25375 22.3965 2.58105 22.6246 2.28548C22.9729 1.85779 23.2397 1.36957 23.4118 0.844809C23.4118 0.800474 23.4118 0.748808 23.4118 0.719251C23.3928 0.708226 23.3713 0.702294 23.3493 0.702294C23.3273 0.702294 23.3058 0.708226 23.2868 0.719251C22.3951 1.1935 21.4486 1.55579 20.4688 1.79804C20.4352 1.80698 20.3999 1.80676 20.3664 1.79768C20.3328 1.7886 20.3021 1.77076 20.2775 1.74609C20.2017 1.65509 20.118 1.57113 20.0274 1.49497C19.6201 1.14098 19.1578 0.856321 18.6589 0.652504C17.9965 0.384177 17.282 0.270696 16.5694 0.320208C15.8729 0.364613 15.1934 0.555791 14.5755 0.881611C13.9584 1.20429 13.4128 1.64922 12.9716 2.18951C12.5196 2.75381 12.1934 3.40902 12.0151 4.11076C11.8692 4.77612 11.8518 5.46359 11.9637 6.13557C11.9637 6.24641 11.9637 6.26111 11.868 6.24633C7.99799 5.66998 4.78275 4.28069 2.17822 1.31024C2.06785 1.18462 2.00165 1.18462 1.91336 1.31024C0.772953 3.01714 1.32477 5.74381 2.75212 7.11081C2.93779 7.29725 3.13428 7.47241 3.34066 7.63541C2.68829 7.59231 2.052 7.41369 1.47193 7.11081C1.36157 7.04431 1.30271 7.11091 1.29536 7.21436C1.27745 7.39865 1.27745 7.58425 1.29536 7.76855C1.41199 8.6413 1.75658 9.46716 2.29416 10.1628C2.83175 10.8585 3.54311 11.399 4.35599 11.729C4.55706 11.8152 4.76678 11.8794 4.98145 11.921C4.37548 12.0411 3.75379 12.0588 3.14208 11.9729C3.00965 11.9729 2.95811 12.0173 3.00961 12.1429C3.32458 12.9667 3.84419 13.6959 4.519 14.2611C5.19382 14.8263 6.00139 15.2088 6.86491 15.372C7.04149 15.372 7.21804 15.3717 7.38726 15.4456C6.95317 16.1033 5.45228 16.5984 4.75332 16.8423C3.47365 17.2989 2.1109 17.4727 0.758188 17.3521C0.544822 17.3521 0.500727 17.3521 0.441868 17.3521C0.383008 17.3521 0.441835 17.4407 0.500695 17.4924C0.772921 17.6772 1.05251 17.8323 1.33209 17.9875C2.18375 18.4405 3.08168 18.7998 4.01021 19.059C8.80727 20.3817 14.215 19.4062 17.8202 15.8299C20.6528 13.0146 21.646 9.13543 21.646 5.24872C21.646 5.10094 21.8226 5.01214 21.933 4.93086C22.6498 4.37845 23.2798 3.7211 23.8018 2.98038C23.884 2.87261 23.9257 2.73896 23.9195 2.60334C23.9122 2.58118 23.9195 2.59581 23.8239 2.64015Z"
+                  fill="#0A3468"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="static/js/libs.min.js"></script>
+
+    <script src="static/js/main.js"></script>
+
+    
+  </body>
+</html>

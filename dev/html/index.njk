@@ -1,0 +1,479 @@
+{% extends "templates/main.njk" %}
+{% set title = 'Main Page' %}
+{% set bodyClass = 'main-page' %}
+{% block content %}
+  {# include here blocks #}
+
+  <section class="hero">
+    <div class="container">
+      <div class="col-12 col-xl-6 col-md-10 px-md-5 px-0">
+        <h1 class="title">
+        Лучшие круизы <br/>
+        России и Белоруссии
+      </h1>
+        <h3 class="hero-subtitle">Найди свой круиз</h3>
+        <form class="main-filter">
+          <div class="filter mb-3">
+            <div class="first-filter">
+              <div class="first-filter__item">
+                <input type="radio" name="some-name" id="b-1" checked/>
+                <label for="b-1">Речные круизы по России</label>
+              </div>
+              <div class="first-filter__item">
+                <input type="radio" name="some-name" id="b-2"/>
+                <label for="b-2">Речные круизы по Европе</label>
+              </div>
+              <div class="first-filter__item">
+                <input type="radio" name="some-name" id="b-3"/>
+                <label for="b-3">Морские круизы</label>
+              </div>
+            </div>
+          </div>
+          <div class="filter">
+            <div class="second-filter">
+              <div class="select-form">
+                <select>
+                  <option value="" selected disabled hidden>Город отправления</option>
+                  <option value="1">Москва</option>
+                  <option value="2">Питер</option>
+                  <option value="1">Москва</option>
+                  <option value="2">Питер</option>
+                </select>
+              </div>
+              <div class="input-form">
+                <input type="text" placeholder="От"/>
+                <input type="text" placeholder="До"/>
+              </div>
+            </div>
+
+            <div class="third-filter">
+              <div class="select-form">
+                <select>
+                  <option value="" selected disabled hidden>Продолжительность круиза</option>
+                  <option value="1">1 день</option>
+                  <option value="2">2 дня</option>
+                  <option value="3">3 дня</option>
+                </select>
+              </div>
+              <div class="input-form">
+                <input type="text" placeholder="Лайнер/Теплоход"/>
+              </div>
+            </div>
+          </div>
+          <a href="cruiseList.html" class="main-filter__btn">Найти</a>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="special-offers">
+    <img class="offers-piece" src="static/images/piece.png" alt=""/>
+    <img class="offers-piece2" src="static/images/piece.png" alt=""/>
+    <div class="container">
+      <h2>Специальные предложения</h2>
+      <div class="special-offers__slide">
+        <!-- Slider main container -->
+        <div class="swiper offer__list">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="offer__item">
+                <div class="offer-image">
+                  <img class="w-100" src="static/images/offer.jpg" alt=""/>
+                </div>
+                <div class="offer-description">
+                  <div class="offer-tittle">Получи от круиза все!</div>
+                  <p>Повышенный кэшбек при раннем бронировании всех круизов</p>
+                </div>
+                <div class="offer-hidden">
+                  <img class="w-100" src="static/images/piece.png" alt=""/>
+                  <img class="ellipse1" src="static/images/ellipse.png" alt=""/>
+                  <img class="ellipse2" src="static/images/ellipse.png" alt=""/>
+                  <img class="comma" src="static/images/comma.png" alt=""/>
+                  <div class="offer-description">
+                    <div class="offer-tittle">Получи от круизов все!</div>
+                    <p>Повышенный кэшбек при раннем бронировании всех круизов</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="offer__item">
+                <div class="offer-image">
+                  <img class="w-100" src="static/images/offer.jpg" alt=""/>
+                </div>
+                <div class="offer-description">
+                  <div class="offer-tittle">Получи от круиза все!</div>
+                  <p>Повышенный кэшбек при раннем бронировании всех круизов</p>
+                </div>
+                <div class="offer-hidden">
+                  <img class="w-100" src="static/images/piece.png" alt=""/>
+                  <img class="ellipse1" src="static/images/ellipse.png" alt=""/>
+                  <img class="ellipse2" src="static/images/ellipse.png" alt=""/>
+                  <img class="comma" src="static/images/comma.png" alt=""/>
+                  <div class="offer-description">
+                    <div class="offer-tittle">Получи от круизов все!</div>
+                    <p>Повышенный кэшбек при раннем бронировании всех круизов</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="offer__item">
+                <div class="offer-image">
+                  <img class="w-100" src="static/images/offer.jpg" alt=""/>
+                </div>
+                <div class="offer-description">
+                  <div class="offer-tittle">Получи от круиза все!</div>
+                  <p>Повышенный кэшбек при раннем бронировании всех круизов</p>
+                </div>
+                <div class="offer-hidden">
+                  <img class="w-100" src="static/images/piece.png" alt=""/>
+                  <img class="ellipse1" src="static/images/ellipse.png" alt=""/>
+                  <img class="ellipse2" src="static/images/ellipse.png" alt=""/>
+                  <img class="comma" src="static/images/comma.png" alt=""/>
+                  <div class="offer-description">
+                    <div class="offer-tittle">Получи от круизов все!</div>
+                    <p>Повышенный кэшбек при раннем бронировании всех круизов</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="offer__item">
+                <div class="offer-image">
+                  <img class="w-100" src="static/images/offer.jpg" alt=""/>
+                </div>
+                <div class="offer-description">
+                  <div class="offer-tittle">Получи от круиза все!</div>
+                  <p>Повышенный кэшбек при раннем бронировании всех круизов</p>
+                </div>
+                <div class="offer-hidden">
+                  <img class="w-100" src="static/images/piece.png" alt=""/>
+                  <img class="ellipse1" src="static/images/ellipse.png" alt=""/>
+                  <img class="ellipse2" src="static/images/ellipse.png" alt=""/>
+                  <img class="comma" src="static/images/comma.png" alt=""/>
+                  <div class="offer-description">
+                    <div class="offer-tittle">Получи от круизов все!</div>
+                    <p>Повышенный кэшбек при раннем бронировании всех круизов</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="offer__item">
+                <div class="offer-image">
+                  <img class="w-100" src="static/images/offer.jpg" alt=""/>
+                </div>
+                <div class="offer-description">
+                  <div class="offer-tittle">Получи от круиза все!</div>
+                  <p>Повышенный кэшбек при раннем бронировании всех круизов</p>
+                </div>
+                <div class="offer-hidden">
+                  <img class="w-100" src="static/images/piece.png" alt=""/>
+                  <img class="ellipse1" src="static/images/ellipse.png" alt=""/>
+                  <img class="ellipse2" src="static/images/ellipse.png" alt=""/>
+                  <img class="comma" src="static/images/comma.png" alt=""/>
+                  <div class="offer-description">
+                    <div class="offer-tittle">Получи от круизов все!</div>
+                    <p>Повышенный кэшбек при раннем бронировании всех круизов</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- If we need navigation buttons -->
+
+        <div class="offers-navigation">
+          <div class="prev-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none"
+            style="&#10;    width: 16px;&#10;    height: 28px;&#10;">
+              <path opacity="0.6" d="M10 2.28571L3.75 8L10 13.7143L8.75 16L0 8L8.75 0L10 2.28571Z" fill="#082344"
+              style="&#10;    opacity: 1;&#10;    fill: #66B2FE;&#10;"/>
+            </svg>
+          </div>
+          <div class="next-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none"
+            style="&#10;    width: 16px;&#10;    height: 28px;&#10;    transform: rotate(180deg);&#10;">
+              <path opacity="0.6" d="M10 2.28571L3.75 8L10 13.7143L8.75 16L0 8L8.75 0L10 2.28571Z" fill="#082344"
+              style="&#10;    opacity: 1;&#10;    fill: #66B2FE;&#10;"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="row position-relative">
+        <div class="eliipses">
+          <img src="static/images/ellipse2.png" alt=""/>
+          <img src="static/images/ellipse2.png" alt=""/>
+          <img src="static/images/ellipse2.png" alt=""/>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-12 px-4">
+          <div class="offer-item2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M14.4 9.6V0H9.6V9.6H0V14.4H9.6V24H14.4V14.4H24V9.6H14.4Z" fill="#66B2FE"/>
+            </svg>
+            <p>Повышенный кэшбек при раннем бронировании всех круизов</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-12 px-4">
+          <div class="offer-item2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M14.4 9.6V0H9.6V9.6H0V14.4H9.6V24H14.4V14.4H24V9.6H14.4Z" fill="#66B2FE"/>
+            </svg>
+            <p>Повышенный кэшбек при раннем бронировании всех круизов</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-12 px-4">
+          <div class="offer-item2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M14.4 9.6V0H9.6V9.6H0V14.4H9.6V24H14.4V14.4H24V9.6H14.4Z" fill="#66B2FE"/>
+            </svg>
+            <p>Повышенный кэшбек при раннем бронировании всех круизов</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-12 px-4">
+          <div class="offer-item2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M14.4 9.6V0H9.6V9.6H0V14.4H9.6V24H14.4V14.4H24V9.6H14.4Z" fill="#66B2FE"/>
+            </svg>
+            <p>Повышенный кэшбек при раннем бронировании всех круизов</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-12 px-4">
+          <div class="offer-item2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M14.4 9.6V0H9.6V9.6H0V14.4H9.6V24H14.4V14.4H24V9.6H14.4Z" fill="#66B2FE"/>
+            </svg>
+            <p>Повышенный кэшбек при раннем бронировании всех круизов</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-12 px-4">
+          <div class="offer-item2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M14.4 9.6V0H9.6V9.6H0V14.4H9.6V24H14.4V14.4H24V9.6H14.4Z" fill="#66B2FE"/>
+            </svg>
+            <p>Повышенный кэшбек при раннем бронировании всех круизов</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="hero2">
+    <img class="hero-leaves" src="static/images/leaves1.png" alt=""/>
+    <img class="hero-leaves" src="static/images/leaves2.png" alt=""/>
+    <img class="hero-leaves" src="static/images/leaves3.png" alt=""/>
+    <div class="container position-relative">
+      <div class="col-lg-6">
+        <h1 class="title">Лучшие круизы России и Белоруссии</h1>
+        <p>
+        Повышенный кэшбек при раннем бронировании всех круизов, Повышенный кэшбек при раннем
+        бронировании всех круизов, Повышенный кэшбек при раннем бронировании всех круизов,
+      </p>
+        <button data-bs-toggle="modal" data-bs-target="#call-request" class="primary-btn">Заказать
+        звонок</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="corporate">
+    <img class="corporate-piece" src="static/images/piece2.png" alt=""/>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2>Корпоративный отдых</h2>
+          <p class="corporate-text">
+          Повышенный кэшбек при раннем бронировании всех круизов, Повышенный кэшбек при раннем и тл
+          стсотстттиоврвгу чисоимирр сорврсислвсо лстсиорир аыфвецвнгц ствистситв итстчтисрвоцщвоцвч
+          чсттсрпаугрр овосргвшауца иаовнаущцз рсгврспи осшрвсрвг гспцвшцй гсвисйг сгрвгрслйц.
+        </p>
+          <button class="primary-btn" data-bs-toggle="modal" data-bs-target="#call-request">Заказать звонок</button>
+        </div>
+        <div class="col-lg-6 py-5 py-lg-0">
+          <div class="row">
+            <div class="col-6">
+              <div class="white-block">
+                <p>Получи все!</p>
+              </div>
+              <div class="blue-block ms-auto">
+                <p>Получи все!</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="blue-block">
+                <p>Получи все!</p>
+              </div>
+              <div class="white-block">
+                <p>Получи все!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img class="beach-img" src="static/images/beach.png" alt=""/>
+  </section>
+
+  <section class="popular">
+    <img class="popular-piece" src="static/images/piece3.png" alt=""/>
+    <img class="popular-leave" src="static/images/leaves4.png" alt=""/>
+    <div class="container">
+      <h2>Популярные направления</h2>
+      <div class="row popular__list">
+        <div class="col-xl-4 col-lg-6">
+          <div class="popular__item">
+            <div class="popular-wrapper">
+              <div class="popular-image">
+                <img class="w-100" src="static/images/offer.jpg" alt=""/>
+              </div>
+              <div class="popular-title">Круиз по Волге</div>
+              <div class="popular-price">
+                <div class="duration">
+                  <p>Продолжительность</p>
+                  <span>12 дней</span>
+                </div>
+                <div class="price">
+                  <p>Стоимость</p>
+                  <span>12300 руб</span>
+                </div>
+              </div>
+              <div class="popular-hidden">
+                <img class="w-100" src="static/images/piece.png" alt=""/>
+                <img class="comma" src="static/images/comma.png" alt=""/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6">
+          <div class="popular__item">
+            <div class="popular-wrapper">
+              <div class="popular-image">
+                <img class="w-100" src="static/images/offer.jpg" alt=""/>
+              </div>
+              <div class="popular-title">Круиз по Волге</div>
+              <div class="popular-price">
+                <div class="duration">
+                  <p>Продолжительность</p>
+                  <span>12 дней</span>
+                </div>
+                <div class="price">
+                  <p>Стоимость</p>
+                  <span>12300 руб</span>
+                </div>
+              </div>
+              <div class="popular-hidden">
+                <img class="w-100" src="static/images/piece.png" alt=""/>
+                <img class="comma" src="static/images/comma.png" alt=""/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6">
+          <div class="popular__item">
+            <div class="popular-wrapper">
+              <div class="popular-image">
+                <img class="w-100" src="static/images/offer.jpg" alt=""/>
+              </div>
+              <div class="popular-title">Круиз по Волге</div>
+              <div class="popular-price">
+                <div class="duration">
+                  <p>Продолжительность</p>
+                  <span>12 дней</span>
+                </div>
+                <div class="price">
+                  <p>Стоимость</p>
+                  <span>12300 руб</span>
+                </div>
+              </div>
+              <div class="popular-hidden">
+                <img class="w-100" src="static/images/piece.png" alt=""/>
+                <img class="comma" src="static/images/comma.png" alt=""/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade call-request__modal" id="call-request" tabindex="-1" aria-labelledby="examplemodallabel"
+  aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered cabin-modal">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="modal-content">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="autorize-form">
+              <h4 class="autorize-title">Заполните форму, и мы вам перезвоним</h4>
+              <form method="GET" action="https://picsum.photos/100/100" class="needs-validation" novalidate data-ajax-form data-succes-state="<div class='alert alert-success'>Спасибо! Ваша заявка принята.</div>" data-error-state="<div>Error</div>">
+                <div class="form-group">
+                  <input name="name" class="form-control" type="text" placeholder="Имя" required>
+                  <div class="invalid-feedback">заполните данное поле</div>
+                </div>
+                <div class="form-group">
+                  <input name="phone" class="form-control" type="number" placeholder="Номер" required>
+                  <div class="invalid-feedback">заполните данное поле</div>
+                </div>
+                <button type="submit" class="primary-btn mb-3">Заказать звонок</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    $(function () {
+
+      $('[data-ajax-form]').each(function () {
+        var $form = $(this);
+        var $submitBtn = $form.find('button[type="submit"]');
+        var originalSubmitText = $submitBtn.text();
+        var successHtml = $form.attr('data-succes-state');
+        var errorHtml = $form.attr('data-error-state');
+
+        $form.on('submit', function (e) {
+          e.preventDefault();
+
+          if (!$form[0].checkValidity()) 
+            return;
+          
+          $submitBtn
+            .text('Отправка формы...')
+            .css('opacity', '0.6')
+            .attr('disabled', true);
+
+          var url = $form.attr('action');
+          var method = $form.attr('method') || 'POST';
+          var body = new FormData($form[0]);
+
+          if (!url) {
+            throw new Error('url is not provided');
+          }
+
+          $.ajax({
+            url: url,
+            method: method,
+            data: body,
+            processData: false,
+            success: function () {
+              $form.html(successHtml)
+            },
+            error: function () {
+              $form.html(errorHtml)
+            },
+            complete: function () {
+              console.log("Done")
+            }
+          });
+        });
+      });
+
+    });
+  </script>
+{% endblock %}

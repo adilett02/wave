@@ -1,0 +1,18 @@
+.navbar-nav {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    .nav-item {
+        margin: 0 10px;
+    }
+}
+.nav-link {
+    font-size: 18px;
+    color: $secondary-color;
+    opacity: 0.6;
+    &.active {
+        opacity: 1;
+        border-bottom: 1px solid $secondary-color;
+    }
+}

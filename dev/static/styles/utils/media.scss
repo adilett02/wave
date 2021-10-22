@@ -1,0 +1,426 @@
+@media (max-width: 1600px) {
+    .cruise .leave-img {
+        display: none;
+    }
+    .cruse-list__section {
+        .leaves1,
+        .leaves2 {
+            display: none;
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .testimonials {
+        .carousel-control-prev {
+            left: 70%;
+        }
+        .carousel-control-next {
+            left: 80%;
+        }
+    }
+    .admin-section {
+        padding-left: 0;
+    }
+    .admin-menu {
+        left: -300px;
+    }
+}
+@media (max-width: 992px) {
+    header {
+        padding: 40px 20px;
+    }
+    .menu {
+        display: none;
+    }
+    .hero2 {
+        padding-top: 160px;
+        .container {
+            background: rgba(96, 140, 188, 0.6);
+            padding: 20px;
+        }
+    }
+    .beach-img {
+        width: 100%;
+    }
+    .popular-leave {
+        display: none;
+    }
+    .footer-bottom {
+        padding: 40px 15px;
+    }
+    .cruse-list__header {
+        padding: 30px 20px;
+        .header-search {
+            display: none;
+        }
+    }
+    .center-menu {
+        display: none;
+    }
+    .cruse-list__section {
+        .cruise__item {
+            flex-direction: column;
+        }
+        .cruise-img {
+            padding-top: 55%;
+            width: 100%;
+            border-radius: 0;
+            border-top-right-radius: 60px;
+        }
+        .cruise-info {
+            border-bottom-left-radius: 60px;
+        }
+    }
+    .cruise {
+        .beach-img {
+            display: none;
+        }
+    }
+    .confirm-cruise {
+        flex-direction: column-reverse;
+    }
+    .booking {
+        .cruise-img {
+            width: 55%;
+        }
+        .primary-btn {
+            margin-top: 30px;
+        }
+    }
+    .booking-end .leaves2 {
+        display: none;
+    }
+    .header-search {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .menu {
+        display: none;
+    }
+    .vessel-service {
+        min-width: 33%;
+    }
+    .testimonials .leave {
+        display: none;
+    }
+    .cabin-block .table {
+        display: none;
+        overflow-x: auto;
+    }
+    .nothing .leave2 {
+        display: none;
+    }
+    .nothing-img img {
+        width: 100%;
+    }
+}
+@media (max-width: 576px) {
+    html,
+    body {
+        font-size: 15px;
+    }
+    input,
+    button,
+    select,
+    optgroup,
+    textarea {
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    .title {
+        font-size: 48px;
+    }
+    .hero-subtitle {
+        font-size: 32px;
+    }
+    .first-filter {
+        label {
+            padding: 9px;
+        }
+    }
+    .primary-btn {
+        font-size: 16px;
+        padding: 7px 20px;
+    }
+    .hero {
+        height: auto;
+        padding: 200px 0;
+    }
+    .offers-navigation {
+        top: auto;
+        justify-content: center;
+        .prev-btn,
+        .next-btn {
+            margin: 0 20px;
+        }
+    }
+    .eliipses {
+        img:nth-child(2) {
+            bottom: 0;
+        }
+        img:nth-child(3) {
+            top: 0;
+        }
+    }
+    .popular-piece {
+        width: 100%;
+    }
+    .footer-form {
+        height: 60px;
+        button {
+            width: 100px;
+        }
+    }
+    .special-offers .offers-piece2 {
+        display: none;
+    }
+    .special-offers__slide {
+        padding-bottom: 100px;
+    }
+    .special-offers2 {
+        padding-bottom: 0;
+    }
+    .hero2 {
+        .hero-leaves:nth-child(3),
+        .hero-leaves:nth-child(2) {
+            width: 50%;
+        }
+    }
+    .cruse-list__section {
+        padding: 50px 0;
+        .leaves1 {
+            display: none;
+        }
+        .leaves2 {
+            display: none;
+        }
+        .cruise-info {
+            flex-direction: column;
+            padding: 15px;
+        }
+        .cruise-description {
+            max-width: 100%;
+        }
+        .cruise-type {
+            font-size: 17px;
+        }
+        .cruise-date {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        .cruise-duration {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .cruise-name {
+            margin-bottom: 10px;
+            font-size: 26px;
+        }
+        .cruise-road li {
+            font-size: 16px;
+        }
+        .cruise-price {
+            font-size: 16px;
+            .price {
+                font-size: 26px;
+            }
+        }
+    }
+    .cruise {
+        .cruise-title {
+            font-size: 48px;
+        }
+        .cruise-subtitle {
+            font-size: 32px;
+        }
+        .cruise-footer {
+            flex-direction: column-reverse;
+        }
+        .cruise-price {
+            margin-bottom: 20px;
+        }
+    }
+    .vessel-service {
+        min-width: 50%;
+        margin-bottom: 20px;
+    }
+    .testimonials__item {
+        padding: 30px;
+    }
+    .booking {
+        padding: 0px;
+        padding-top: 80px;
+    }
+    .navbar-nav {
+        margin-top: 20px;
+    }
+    .booking-end {
+        .leaves1 {
+            width: 28%;
+        }
+        padding: 80px 0;
+    }
+    .booking-end__text {
+        font-size: 20px;
+    }
+    .help {
+        padding-top: 100px;
+        h4 {
+            font-size: 20px;
+        }
+    }
+    .dashboard,
+    .orders {
+        padding: 20px;
+    }
+    .bookings {
+        padding: 16px;
+        .primary-btn {
+            padding: 7px 5px;
+            // &:hover {
+            //     background-color: inherit;
+            // }
+            &:hover {
+                pointer-events: none !important;
+            }
+        }
+    }
+    .orders__item {
+        padding: 5px;
+    }
+    .dashboard-orders {
+        padding: 25px 5px 25px 15px;
+    }
+    .have-acc {
+        display: none;
+    }
+    .autorize {
+        min-height: auto;
+        padding: 50% 0;
+    }
+    .autorize-title {
+        font-size: 28px;
+    }
+    .travel {
+        padding-top: 80px;
+        padding-bottom: 0;
+    }
+    .travel-footer {
+        font-size: 18px;
+    }
+    .cabin-modal {
+        .dots {
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+        h4 {
+            margin-top: 10px;
+        }
+        .dot {
+            width: 25px;
+            height: 25px;
+        }
+    }
+    .nothing .leave1 {
+        width: 25%;
+    }
+    .list__filters {
+        display: none;
+    }
+    .dashboard .list__filters .reset,
+    .orders .list__filters .reset {
+        justify-content: center;
+    }
+    .list__filters .primary-btn {
+        width: 100%;
+        padding: 10px 20px;
+    }
+    .cabin-block .table {
+        font-size: 15px;
+    }
+    .cabin-modal {
+        .modal-content {
+            padding: 50px 40px;
+        }
+        .btn-close {
+            top: 15px;
+            right: 20px;
+        }
+    }
+    .call-request__modal {
+        .cabin-modal {
+            h4 {
+                font-size: 28px;
+            }
+            .modal-content {
+                padding: 50px 20px 0px 20px;
+            }
+            .btn-close {
+                top: 20px;
+                right: 20px;
+            }
+        }
+    }
+}
+@media (max-width: 480px) {
+    .hero {
+        padding: 160px 0;
+    }
+    .title {
+        font-size: 40px;
+    }
+    .hero-subtitle {
+        font-size: 28px;
+    }
+    .second-filter {
+        flex-direction: column;
+        .select-form {
+            width: 100%;
+            border-right: none;
+            border-bottom: 1px solid #80afe5;
+            select {
+                padding: 15px 10px;
+            }
+        }
+        .input-form {
+            width: 100%;
+            input {
+                padding: 15px 10px;
+            }
+        }
+    }
+    .third-filter {
+        flex-direction: column;
+        .select-form {
+            width: 100%;
+            border-right: none;
+            border-bottom: 1px solid #80afe5;
+            select {
+                padding: 15px 10px;
+            }
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+        .input-form {
+            width: 100%;
+        }
+    }
+    .list__filters {
+        .list__filter {
+            width: 100%;
+            input,
+            select {
+                width: 100%;
+            }
+        }
+    }
+    .orders .list__filters .primary-btn {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+}
