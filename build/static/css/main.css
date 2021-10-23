@@ -11902,6 +11902,10 @@ header p {
       .cabin-block .table__item .choise-input::-webkit-input-placeholder {
         color: #0a3468; }
 
+::-webkit-calendar-picker-indicator {
+  position: absolute;
+  right: 0; }
+
 .passengers-block {
   margin-top: 40px;
   padding-bottom: 30px;
@@ -11937,6 +11941,9 @@ header p {
     border: 1px solid #000;
     text-align: center;
     color: #000; }
+  .passengers-block input[type="date"] {
+    position: relative;
+    text-align: left; }
   .passengers-block .ckeckboxes {
     margin-top: 16px;
     position: relative; }
