@@ -30,6 +30,7 @@ $('input[name="daterange"]').daterangepicker(
   {
     // "startDate": "ьь/02/2021",
     autoUpdateInput: false,
+    "showDropdowns": true,
     "locale": {
       "format": "DD.MM.YYYY",
       "separator": " - ",
@@ -108,6 +109,7 @@ $('input[name="single-date"]').on('focus', function () {
     {
       singleDatePicker: true,
       // autoUpdateInput: true,
+      "showDropdowns": true,
       "locale": {
         "format": "DD.MM.YYYY",
         "applyLabel": "Готово",
