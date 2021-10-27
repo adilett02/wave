@@ -1,5 +1,1 @@
-# Start template for html code
-
----
-
-Author: Daniel Savchenko (daniel-savhenko.com) 
+https://adilett02.github.io/wave/build/
